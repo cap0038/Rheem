@@ -1,6 +1,6 @@
 [![build status](
   http://img.shields.io/travis/collinpikeusa/repo/master.svg?style=flat)](
- https://travis-ci.org/username/Rheem)
+ https://travis-ci.org/collinpikeusa/Rheem)
 
 Version: 1.0
 Description:The system implemented currently is more of a proof of concept rather than an official system that will be deployed into production use.
