@@ -1,6 +1,6 @@
 [![build status](
   http://img.shields.io/travis/collinpikeusa/repo/master.svg?style=flat)](
- https://travis-ci.org/collinpikeusa/Rheem)
+ https://travis-ci.org/collinpikeusa/Rheem.svg?branch=master)
  
 [![codecov](https://codecov.io/gh/collinpikeusa/Rheem/branch/master/graph/badge.svg)](https://codecov.io/gh/collinpikeusa/collinpikeusa)
 
