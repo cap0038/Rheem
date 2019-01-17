@@ -1,3 +1,5 @@
 language: python
 
+codecov
+
 script: pytest
