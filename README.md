@@ -1,8 +1,6 @@
 [![build status](
   http://img.shields.io/travis/collinpikeusa/repo/master.svg?style=flat)](
- https://travis-ci.org/collinpikeusa/Rheem.svg?branch=master)
- 
-[![codecov](https://codecov.io/gh/collinpikeusa/Rheem/branch/master/graph/badge.svg)](https://codecov.io/gh/collinpikeusa/collinpikeusa)
+ https://api.travis-ci.org/collinpikeusa/Rheem.svg?branch=master)[![codecov](https://codecov.io/gh/collinpikeusa/Rheem/branch/master/graph/badge.svg)](https://codecov.io/gh/collinpikeusa/collinpikeusa)
 
 Version: 1.0
 Description:The system implemented currently is more of a proof of concept rather than an official system that will be deployed into production use.
