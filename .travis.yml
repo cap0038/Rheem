@@ -9,7 +9,7 @@ install:
   - pip install codecov
 
 script:
-  - coverage run tests.py
+  - nosetts test/tests.py -v - with-coverage
 
 after_success:
-- codecov
+  - cbash < (curl -s https://codecov.io/bash)

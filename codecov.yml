@@ -1,0 +1,13 @@
+codecov:
+  token: 747a9b18-070a-4792-9917-f0d2a2d5d728
+  require_ci_to_pass: yes
+
+coverage:
+  precision: 2
+  round: down
+  range: "70...100"
+
+status:
+  project: yes
+  patch: yes
+  changes: no
