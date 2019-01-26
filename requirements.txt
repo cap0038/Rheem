@@ -1,4 +1,5 @@
 codecov
+python-logilab-common
 certifi
 boto
 pytest
