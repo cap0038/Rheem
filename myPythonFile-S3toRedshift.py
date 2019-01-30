@@ -10,7 +10,7 @@ s3 = boto3.client('s3')
 def lambda_handler(event, context):
     print("I'm being triggered!")
     print('starting connection')
-    con=psycopg2.connect(dbname= 'dev', host='redshift-cluster-1.czutp277tj2a.us-east-2.redshift.amazonaws.com', port= '5439', user= 'awsuser', password= 'Michael1')
+    con=psycopg2.connect(dbname= 'dev', host=' redshift-cluster-1.cqt7r2hh5tzk.us-east-1.redshift.amazonaws.com', port= '5439', user= 'awsuser', password= 'Rheemuser1')
     cur = con.cursor()
     cur.execute("select * from public.demo")
     rows = cur.fetchall()
@@ -29,7 +29,7 @@ def lambda_handler(event, context):
     #    print(col)
     
     #cur.copy_from(obj, 'demo', columns=('primary_key', 'name', 'user_id', 'city', 'state', 'timezone_offset', 'zip_code'))
-    cur.execute("copy demo from 's3://econetteam5' credentials 'aws_access_key_id=AKIAJBWEBWNOC2ROLBMQ;aws_secret_access_key=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' csv")
+    cur.execute("copy demo from 's3://rheem-team6' credentials 'aws_access_key_id=ASIA6OWVMRAYEJFNY7ME;aws_secret_access_key=pNGFM5vXRDbmeQYFzrrgB8XWziEy9lVN3p3JlOKl' csv")
     con.commit()
     #sql = """INSERT INTO public.demo(lastname) VALUES(%s);"""
     
