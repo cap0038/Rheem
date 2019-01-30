@@ -27,14 +27,14 @@ for i in range(1):
 f.close()
 
 conn = boto.s3.connect_to_region('us-east-2',
-    aws_access_key_id = 'AKIAJ6QKO3GDWE7INWAA',
-    aws_secret_access_key = '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',
+    aws_access_key_id = 'ASIA6OWVMRAYEJFNY7ME',
+    aws_secret_access_key = 'pNGFM5vXRDbmeQYFzrrgB8XWziEy9lVN3p3JlOKl',
     # host = 's3-website-us-east-1.amazonaws.com',
     # is_secure=True,               # uncomment if you are not using ssl
     calling_format = boto.s3.connection.OrdinaryCallingFormat(),
 )
 
-bucket = conn.get_bucket('econetteam5')
+bucket = conn.get_bucket('rheem-team6')
 key_name = 'myEconetFile1.json'
 path = '' #Directory Under which file should get upload
 full_key_name = os.path.join(path, key_name)
