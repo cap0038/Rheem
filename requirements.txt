@@ -2,4 +2,3 @@ codecov
 certifi
 boto
 pytest
-pytest-cov
