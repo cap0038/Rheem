@@ -20,7 +20,7 @@ def lambda_handler(event, context):
     # if op == "/": c = a / b
     # print(c)
     
-    con=psycopg2.connect(dbname= 'dev', host='redshift-cluster-1.czutp277tj2a.us-east-2.redshift.amazonaws.com', port= '5439', user= 'awsuser', password= 'Michael1')
+    con=psycopg2.connect(dbname= 'dev', host='redshift-cluster-1.cqt7r2hh5tzk.us-east-1.redshift.amazonaws.com', port= '5439', user= 'awsuser', password= 'Rheemuser1')
     cur = con.cursor()
     cur.execute("select * from public.demo")
     rows = cur.fetchall()
