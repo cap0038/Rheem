@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Customer Fill-out Form</title>
+	<meta name="author" content="Raymond Garza (rrg0011@auburn.edu)">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<h1>Customer Fill-out form prototype</h1>
+    <form action="FormHandler.php" method="post" style="text-align:left;">
+        <ul style="list-style-type:none;">
+            <b>Customer information</b>
+            <br><br>
+            <em>Please fill out all fields.</em>
+            <br>
+            <li>
+                First Name:
+                <input type="text" name="firstname">
+                Last Name:
+                <input type="text" name="lastname">
+            </li>
+            <li>
+                Address:
+                <input type="text" name="address" size="40">
+                Address Line 2:
+                <input type="text" name="addressline2"> (optional)
+            </li>
+            <li>
+                City:
+                <input type="text" name="city">
+                State:
+                <select name="state">
+                    <option value="al">Alabama - AL</option> <option value="ak">Alaska - AK</option>
+                    <option value="az">Arizona - AZ</option> <option value="ar">Arkansas - AR</option>
+                    <option value="ca">California - CA</option> <option value="co">Colorado - CO</option>
+                    <option value="ct">Connecticut - CT</option> <option value="dc">District of Columbia - DC</option>
+                    <option value="de">Delaware - DE</option> <option value="fl">Florida - FL</option>
+                    <option value="ga">Georgia - GA</option> <option value="hi">Hawaii - HI</option>
+                    <option value="id">Idaho - ID</option> <option value="il">Illinois - IL</option>
+                    <option value="in">Indiana - IN</option> <option value="ia">Iowa - IA</option>
+                    <option value="ks">Kansas - KS</option> <option value="ky">Kentucky - KY</option>
+                    <option value="la">Louisiana - LA</option> <option value="me">Maine - ME</option>
+                    <option value="md">Maryland - MD</option> <option value="ma">Massachusetts - MA</option>
+                    <option value="mi">Michigan - MI</option> <option value="mn">Minnesota - MN</option>
+                    <option value="ms">Mississippi - MS</option> <option value="mo">Missouri - MO</option>
+                    <option value="mt">Montana - MT</option> <option value="ne">Nebraska - NE</option>
+                    <option value="nv">Nevada - NV</option> <option value="nh">New Hampshire - NH</option>
+                    <option value="nj">New Jersey - NJ</option> <option value="nm">New Mexico - NM</option>
+                    <option value="ny">New York - NY</option> <option value="nc">North Carolina - NC</option>
+                    <option value="nd">North Dakota - ND</option> <option value="oh">Ohio - OH</option>
+                    <option value="ok">Oklahoma - OK</option> <option value="or">Oregon - OR</option>
+                    <option value="pa">Pennsylvania - PA</option> <option value="pr">Puerto Rico - PR</option>
+                    <option value="ri">Rhode Island - RI</option> <option value="sc">South Carolina - SC</option>
+                    <option value="sd">South Dakota - SD</option> <option value="tn">Tennessee - TN</option>
+                    <option value="tx">Texas - TX</option> <option value="ut">Utah - UT</option>
+                    <option value="vt">Vermont - VT</option> <option value="va">Virginia - VA</option>
+                    <option value="wa">Washington - WA</option> <option value="wv">West Virginia - WV</option>
+                    <option value="wi">Wisconsin - WI</option> <option value="wy">Wyoming - WY</option>
+                </select>
+            </li>
+            <li>
+                Zip code:
+                <input type="text" name="zipcode" size="13" maxlength="5">
+            </li>
+            <br>
+            <li>
+                E-mail: <input type="email" name="email">
+            </li>
+            <br>
+            <li>
+                Telephone: <input type="tel" name="telephone">
+            </li>
+            <br><br>
+            <b>Unit information</b>
+            <br><br>
+            Select your product type:
+            <br>
+            <input type="radio" name="producttype" value="waterheater" checked> Water Heater
+            <br>
+            <input type="radio" name="producttype" value="hvac"> HVAC
+            <br>
+            <input type="radio" name="producttype" value="poolheater"> Pool Heater
+            <br>
+            <input type="radio" name="producttype" value="refrigerator"> Refrigerator
+            <br><br>
+            <li>
+                Serial Number: <input type="text" name="serialnumber" size="30">
+            </li>
+            <li>
+                Model Number:  <input type="text" name="modelnumber" size="30">
+            </li>
+
+            <br><br>
+            <b>Unit Monitoring and Filter Subscription Sign-up</b>
+            <br><br>
+
+            Would you like to sign up for up-to-the minute diagnostics? 
+            <a href="https://www.rheem.com"> Learn More</a><br>
+            <input type="radio" name="diagnostics" value="no" checked> No
+            <input type="radio" name="diagnostics" value="yes"> Yes
+            <br><br>
+
+            Would you like to sign up for the HVAC filter subscription service? 
+            <a href="https://www.rheem.com"> Learn More</a><br>
+            <input type="radio" name="filtersubscription" value="no" checked> No
+            <input type="radio" name="filtersubscription" value="yes"> Yes
+            <br><br>
+            <input type="submit" value="Submit">
+        </ul>
+    </form>
+</body>

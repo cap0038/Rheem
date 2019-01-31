@@ -1,13 +1,10 @@
-[![Build Status](https://travis-ci.com/collinpikeusa/Rheem.svg?branch=master)](https://travis-ci.com/collinpikeusa/Rheem)
-[![codecov](https://codecov.io/gh/collinpikeusa/Rheem/branch/master/graph/badge.svg)](https://codecov.io/gh/collinpikeusa/Rheem)
-
-
-
 Version: 1.0
-Description:The system implemented currently is more of a proof of concept rather than an official system that will be deployed into production use.
-	    Features that have been implemented is the automation of data migration from an S3 Bucket.
-	    As soon as a new file is uploaded into the bucket it triggers the entire pipeline that causes the file to be moved into Redshift via Lambda code.
-	    Then, from Redshift there is an API Gateway that triggers another Lambda code that queries data into the Reliance platform for further analytics
-Features: S3 Bucket, Lambda, Redshift, and API Gateway implementation
-Known bugs/issues: No implementation with EcoNet or Twilio text service
-Source code: myPythonFile-API, myPythonFile-S3toRedshift, Reliance-Task_Profile, StartingOffPythonScript
+
+Description: This branch contains my work on the customer subscription form creation, processing, and sending.
+Features: An additional HTML file with customer information gathering ONLY. 
+
+Known bugs/issues: No php file yet (still under development).
+
+Software Explanation: HTML form will collect customer data, send it server-side to FormHandler.php (not functional yet, not uploaded). php file will commence error checking, information packing, and send down pipeline.
+
+
